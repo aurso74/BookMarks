@@ -1,17 +1,14 @@
 # BookmarkPrg
 
 * This project was generated with 
-  * Risposta
- * [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20;
- * NGRX for managing the state;
- * Angular material for the user interface;
+  * [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20;
+  * NGRX for managing the state;
+  * Angular material for the user interface;
 
-* Domanda
-  * Risposta
  * Define the store for the application. Each bookmark should have the following properties:
-  * Name
-  * URL
-  * Group (work / leisure/ personal / ...)
+   * Name
+   * URL
+   * Group (work / leisure/ personal / ...)
  
  * BookmarkPrg use an user inteface for displaying the bookmarks groupped by the "group" property.
  
