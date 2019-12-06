@@ -48,22 +48,6 @@ export class BookmarkmainComponent implements OnInit {
 
   onAddBookMark() {
     this.router.navigate(['/bookmark-frm']);
-    /*var storedNames = JSON.parse(localStorage.getItem("bookmark"));
-    
-    console.log(storedNames);
-
-    var obj = JSON.parse('{"group": "work", "name": "firstWorkUrl1", "url": "Http://work/firstWurl"}'); 
-    var obj1 = JSON.parse('{"group": "hobby", "name": "secondWorkUrl", "url": "Http://work/firstWurl"}'); 
-    storedNames.push(obj);
-    storedNames.push(obj1);
-    console.log(storedNames);
-    localStorage.setItem("bookmark", JSON.stringify(storedNames));
- 
-    this._store.dispatch(new GetBookmarks());
-
-    this._store.dispatch(new GetBookmark(this.selectedBook));
-    this.dataSource = this.bookmark$;*/
-
   }
 
   onDelBookmark(row: Bookmark) {
@@ -97,32 +81,8 @@ export class BookmarkmainComponent implements OnInit {
 
 export class FilterPipe implements PipeTransform {
   transform(value: any, args?: any): any {
-  	//let uniqueArray = Array.from(new Set(value.map(team => team.group)))
-/*  	if (value == null) {
-  		console.log('null a');
-  	} else {
-     //value[0].name = '';
-     //value[0].url = '';
-
-     let uniqueArray = Array.from(new Set(value.map(team => team.group)))
-     return uniqueArray;
-  	}*/
     let uniqueArray = Array.from(new Set(value)); 
-    console.log(uniqueArray[0]);
-    console.log(JSON.stringify(uniqueArray));
-
-    //var aaa = JSON.parse('{"group": "work1", "name": "firstWorkUrl", "url": "Http://work/firstWurl"}'); 
-    //console.log(aaa);
-    //uniqueArray.push(aaa);
-
     localStorage.setItem("primo", JSON.stringify(uniqueArray));
-
-    //var storedNames = JSON.parse(localStorage.getItem("primo"));
-    //var obj = JSON.parse('{ "name":"John", "age":30, "city":"New York"}');
-    //console.log(storedNames);
-    /*console.log(storedNames.indexOf(aaa));
-    storedNames.splice(storedNames.indexOf(aaa), 1);
-    console.log(storedNames);*/
     return uniqueArray;
   }
 }
