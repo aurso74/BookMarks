@@ -21,7 +21,11 @@ export class BookmarksService {
   	let arraym = [];
     
     arraym.push({group: "work", name: "firstWorkUrl", url: "Http://work/firstWurl"});
-    arraym.push({group: "work", name: "firstWorkUrl1", url: "Http://work/firstWurl1"});
+    arraym.push({group: "work", name: "secondWorkUrl", url: "Http://work/secondWurl"});
+    arraym.push({group: "leisure", name: "firstLeisureUrl", url: "Http://work/firstWurl"});
+    arraym.push({group: "leisure", name: "secondLeisureUrl", url: "Http://work/secondWurl"});
+    arraym.push({group: "personal", name: "firstPersonalUrl", url: "Http://work/firstWurl"});
+    arraym.push({group: "persona", name: "secondPersonalUrl", url: "Http://work/secondWurl"});
 
     if (localStorage.getItem("Reset") == 'yes') {
       localStorage.setItem("bookmark", JSON.stringify(arraym));
