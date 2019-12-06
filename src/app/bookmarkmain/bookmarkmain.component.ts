@@ -53,7 +53,6 @@ export class BookmarkmainComponent implements OnInit {
       }
       idx++;
     });
-    console.log(storedNames);
     localStorage.setItem("bookmark", JSON.stringify(storedNames));
     this._store.dispatch(new GetBookmarks());
     
