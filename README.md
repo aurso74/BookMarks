@@ -19,7 +19,8 @@
 ## User Guide
 
 * Navigating to `http://localhost:4200/` the user can see the main page (as you can see in pict.1)
-pict.1![Screenshot](MainForm.png) 
+pict.1
+![Screenshot](MainForm.png) 
 
 * when the user chooses the bookmark group, all the entries of the selected group will be shown.
 ![Screenshot](MainFormChoose.png)  pict.2
