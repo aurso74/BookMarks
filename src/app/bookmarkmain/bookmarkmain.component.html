@@ -1,0 +1,46 @@
+<nav class="navbar d-flex">
+  <a class="navbar-brand" routerLink="/">
+    Bookmarks - NGRX / Material 
+  </a>
+</nav>
+<div class="container app-container">
+  <router-outlet></router-outlet>
+</div>
+
+<!-- let ibookmarks of bookmarks$ | async  -->
+<!--<mat-option *ngFor="let ibookmarks of bookmarks$ | async  " [value]="ibookmarks.group">-->
+
+<mat-form-field>
+  <mat-label>Bookmarks </mat-label>
+  <mat-select (selectionChange)="onBookChange($event)">
+    <mat-option *ngFor="let ibookmarks of bookmarks$ | async  " [value]="ibookmarks.group">
+      {{ibookmarks.group}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<br>
+<button (click)="onAddBookMark()" mat-button color="primary">  Add  </button>
+<button (click)="onResetBookMark()" mat-button color="primary">  Reset  </button>
+
+<br>
+
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <ng-container matColumnDef="group">
+    <th mat-header-cell *matHeaderCellDef> Group </th>
+    <td mat-cell *matCellDef="let element"> {{element.group}} </td>
+  </ng-container>
+  <ng-container matColumnDef="name">
+    <th mat-header-cell *matHeaderCellDef> Name </th>
+    <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="url">
+    <th mat-header-cell *matHeaderCellDef> Url </th>
+    <td mat-cell *matCellDef="let element"> {{element.url}} </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row (dblclick)="onDelBookmark(row)" *matRowDef="let row; columns: displayedColumns; " ></tr>
+</table>
+
