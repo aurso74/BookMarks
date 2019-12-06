@@ -18,23 +18,22 @@
   
 ## User Guide
 
-* Navigating to `http://localhost:4200/` the user can see the main page (as you can see in pict.1)
-pict.1
+* Navigating to `http://localhost:4200/` the user can see the main page 
 ![Screenshot](MainForm.png) 
 
 * when the user chooses the bookmark group, all the entries of the selected group will be shown.
-![Screenshot](MainFormChoose.png)  pict.2
+![Screenshot](MainFormChoose.png)  
 
 * When the user clicks the Reset button, the application will create default records
-![Screenshot](MainFormReset.png)  pict.3
+![Screenshot](MainFormReset.png)  
 
 * the user can delete entries, simply by double clicking on the bookmark on the grid
 
 * the user can add new bookmark entry, simply by clicking on "Add" button.
-![Screenshot](MainFormReset.png)  pict.4
+![Screenshot](MainFormReset.png)  
 
 * The user can use the details form to enter a new bookmark entry.
-![Screenshot](DetailForm.png)  pict.5
+![Screenshot](DetailForm.png)  
 
 
 
@@ -61,5 +60,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-![Screenshot](MainForm.png)
