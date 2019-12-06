@@ -21,7 +21,7 @@ public  url:  string  =  "";
   ngOnInit() {}
 
   onConfirm() {
-  	var storedNames = JSON.parse(localStorage.getItem("bookmark"));
+    var storedNames = JSON.parse(localStorage.getItem("bookmark"));
     var obj = JSON.parse('{"group": "'+ this.group +'", "name": "'+ this.name +'", "url": "'+ this.url +'"}'); 
     storedNames.push(obj);
     localStorage.setItem("bookmark", JSON.stringify(storedNames)); 
