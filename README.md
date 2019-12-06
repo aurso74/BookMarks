@@ -33,7 +33,7 @@
 ![Screenshot](MainFormAdd.png)  
 
 * The user can use the details form to enter a new bookmark entry.
-![Screenshot](DetailForm.png)  
+![Screenshot](DetailForm1.png)  
 
 
 
