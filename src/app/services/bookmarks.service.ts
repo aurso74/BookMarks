@@ -17,21 +17,20 @@ export class BookmarksService {
   constructor(private _http: HttpClient) { }
 
   getBookmarks(): Observable<Bookmarks> {
-
-  	let arraym = [];
+    let arraym = [];
     
-    arraym.push({group: "work", name: "firstWorkUrl", url: "Http://work/firstWurl"});
-    arraym.push({group: "work", name: "secondWorkUrl", url: "Http://work/secondWurl"});
-    arraym.push({group: "leisure", name: "firstLeisureUrl", url: "Http://work/firstWurl"});
-    arraym.push({group: "leisure", name: "secondLeisureUrl", url: "Http://work/secondWurl"});
-    arraym.push({group: "personal", name: "firstPersonalUrl", url: "Http://work/firstWurl"});
-    arraym.push({group: "persona", name: "secondPersonalUrl", url: "Http://work/secondWurl"});
-
+    //if the user click on reset button (detail form) localstorage is clear and 
+    //are added default item (only for proof purpose)
     if (localStorage.getItem("Reset") == 'yes') {
+      arraym.push({group: "work", name: "firstWorkUrl", url: "Http://work/firstWurl"});
+      arraym.push({group: "work", name: "secondWorkUrl", url: "Http://work/secondWurl"});
+      arraym.push({group: "leisure", name: "firstLeisureUrl", url: "Http://work/firstWurl"});
+      arraym.push({group: "leisure", name: "secondLeisureUrl", url: "Http://work/secondWurl"});
+      arraym.push({group: "personal", name: "firstPersonalUrl", url: "Http://work/firstWurl"});
+      arraym.push({group: "persona", name: "secondPersonalUrl", url: "Http://work/secondWurl"});
       localStorage.setItem("bookmark", JSON.stringify(arraym));
     }
-
-    return of(JSON.parse(' {"bookmarks":' + localStorage.getItem("bookmark") +' }')); //this._http.get<Bookmarks>(this.bookmarksUrl);
+    return of(JSON.parse(' {"bookmarks":' + localStorage.getItem("bookmark") +' }')); 
   }
 
 }
