@@ -1,19 +1,22 @@
-<p>Insert new Bookmark</p>
 
+<div class="parent">
 
-<mat-form-field>
- <input  matInput placeholder="group" [(ngModel)]="group"   name="group"  required>
-</mat-form-field>
-<br>
-<mat-form-field>
- <input  matInput  placeholder="name" [(ngModel)]="name"  name="name"  required>
-</mat-form-field>
-<br>
-<mat-form-field>
- <input  matInput  placeholder="url"  [(ngModel)]="url" name="url"  required>
-</mat-form-field>
-<br>
+  <p>Insert new Bookmark</p>
+  <br>
+	<mat-form-field>
+	 <input  matInput placeholder="group" [(ngModel)]="group"   name="group"  required>
+	</mat-form-field>
+	<br>
+	<mat-form-field>
+	 <input  matInput  placeholder="name" [(ngModel)]="name"  name="name"  required>
+	</mat-form-field>
+	<br>
+	<mat-form-field>
+	 <input  matInput  placeholder="url"  [(ngModel)]="url" name="url"  required>
+    </mat-form-field>
+</div>
 
-
-<button (click)="onConfirm()" mat-button color="primary">  Ok  </button>
-<button (click)="onCancel()" mat-button color="primary">  Cancel  </button>
+<div class="parent">
+  <button (click)="onConfirm()" mat-button color="primary">  Ok  </button>
+  <button (click)="onCancel()" mat-button color="primary">  Cancel  </button>
+</div>
