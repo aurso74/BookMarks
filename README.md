@@ -1,6 +1,7 @@
 # BookmarkPrg
 
 * This project was generated with 
+ * Risposta
  * [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20;
  * NGRX for managing the state;
  * Angular material for the user interface;
