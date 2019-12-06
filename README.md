@@ -30,7 +30,7 @@
 * the user can delete entries, simply by double clicking on the bookmark on the grid
 
 * the user can add new bookmark entry, simply by clicking on "Add" button.
-![Screenshot](MainFormReset.png)  
+![Screenshot](MainFormAdd.png)  
 
 * The user can use the details form to enter a new bookmark entry.
 ![Screenshot](DetailForm.png)  
