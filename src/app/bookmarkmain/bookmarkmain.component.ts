@@ -28,7 +28,7 @@ export class BookmarkmainComponent implements OnInit {
 
   onBookChange(ob) {
     this.selectedBook = ob.value;
-  	this._store.dispatch(new GetBookmark(this.selectedBook));
+    this._store.dispatch(new GetBookmark(this.selectedBook));
     this.dataSource = this.bookmark$;
   }
 
