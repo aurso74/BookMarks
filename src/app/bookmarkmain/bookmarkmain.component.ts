@@ -55,7 +55,6 @@ export class BookmarkmainComponent implements OnInit {
     var idx = 0; 
     storedNames.forEach(function(element) {
       if (element.group == row.group && element.name == row.name && element.url == row.url){
-        console.log('trovato' + idx); 
         storedNames.splice(idx, 1);
       }
       idx++;
