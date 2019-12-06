@@ -7,12 +7,6 @@ import { GetBookmarks, GetBookmark } from '../store/actions/bookmark.actions';
 import { selectBookmarkList, selectSelectedBookmark } from '../store/selectors/bookmark.selector';
 import { Bookmark } from '../models/bookmark.interface';
 
-
-const ELEMENT_DATA: Bookmark[] = [
-  {group: 'work', name: 'Hydrogen', url: 'H'}
-];
-
-
 @Component({
   selector: 'app-bookmarkmain',
   templateUrl: './bookmarkmain.component.html',
