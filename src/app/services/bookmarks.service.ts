@@ -19,7 +19,7 @@ export class BookmarksService {
   getBookmarks(): Observable<Bookmarks> {
     let arraym = [];
     
-    //if the user click on reset button (detail form) localstorage is clear and 
+    //if the user click on reset button (detail form) localstorage is cleared and 
     //are added default item (only for proof purpose)
     if (localStorage.getItem("Reset") == 'yes') {
       arraym.push({group: "work", name: "firstWorkUrl", url: "Http://work/firstWurl"});
