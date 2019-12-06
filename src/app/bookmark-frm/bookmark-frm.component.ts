@@ -25,7 +25,7 @@ public  url:  string  =  "";
     var obj = JSON.parse('{"group": "'+ this.group +'", "name": "'+ this.name +'", "url": "'+ this.url +'"}'); 
     storedNames.push(obj);
     localStorage.setItem("bookmark", JSON.stringify(storedNames)); 
-  	this.router.navigate(['/bookmarkmain']);
+    this.router.navigate(['/bookmarkmain']);
   }
 
   onCancel() {
