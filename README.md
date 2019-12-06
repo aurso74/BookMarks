@@ -1,6 +1,25 @@
 # BookmarkPrg
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+* This project was generated with 
+ * [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20;
+ * NGRX for managing the state;
+ * Angular material for the user interface;
+
+ * Define the store for the application. Each bookmark should have the following properties:
+  * Name
+  * URL
+  * Group (work / leisure/ personal / ...)
+ 
+ * BookmarkPrg use an user inteface for displaying the bookmarks groupped by the "group" property.
+ 
+ * BookmarkPrg provides the following features:
+   * Add new bookmarks using a form
+   * Delete bookmarks by "Double-clicking" in the list
+  
+## User Guide
+
+when the appli
+![Screenshot](MainForm.png)
 
 ## Development server
 
