@@ -5,6 +5,8 @@
  * NGRX for managing the state;
  * Angular material for the user interface;
 
+* Domanda
+  * Risposta
  * Define the store for the application. Each bookmark should have the following properties:
   * Name
   * URL
