@@ -36,7 +36,7 @@
 
 ![Screenshot](DetailForm.png)  
 
-* To test it.. [Lets go to bookmark demo] https://bookmark-prg-2.appspot.com/ 
+* To test it.. [Lets go to bookmark demo](https://bookmark-prg-2.appspot.com)
 
 ## Development server
 
