@@ -4,10 +4,10 @@ import { initialBookmarkState, IBookmarkState } from '../state/bookmark.state';
 import { Bookmark } from '../../models/bookmark.interface';
 
 
-export const bookmarkReducers = (
+export function bookmarkReducers(
   state = initialBookmarkState,
   action: BookmarkActions
-): IBookmarkState => {
+): IBookmarkState  {
   switch (action.type) {
     case EBookmarkActions.GetBookmarksSuccess: {
       return {
