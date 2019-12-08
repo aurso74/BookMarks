@@ -34,10 +34,9 @@
 
 * The user can use the details form to enter a new bookmark entry.
 
-
 ![Screenshot](DetailForm.png)  
 
-
+* It is possible to test clicking on the https://bookmark-prg-2.appspot.com/ link demo
 
 ## Development server
 
