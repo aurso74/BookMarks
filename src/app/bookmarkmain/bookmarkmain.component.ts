@@ -65,16 +65,3 @@ export class BookmarkmainComponent implements OnInit {
     this._store.dispatch(new GetBookmarks());
   }
 }
-
-@Pipe({
-  name: 'filterUnique',
-  pure: false
-})
-
-export class FilterPipe implements PipeTransform {
-  transform(value: any, args?: any): any {
-    let uniqueArray = Array.from(new Set(value)); 
-    localStorage.setItem("primo", JSON.stringify(uniqueArray));
-    return uniqueArray;
-  }
-}
