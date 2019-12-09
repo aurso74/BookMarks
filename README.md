@@ -10,7 +10,7 @@
    * URL
    * Group (work / leisure/ personal / ...)
  
- * BookmarkPrg use an user inteface for displaying the bookmarks groupped by the "group" property.
+ * BookmarkPrg use an user inteface for displaying the bookmarks grouped by the "group" property.
  
  * BookmarkPrg provides the following features:
    * Add new bookmarks using a form
